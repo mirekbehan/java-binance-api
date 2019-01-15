@@ -66,8 +66,7 @@ dependencies {
     compile group: 'com.google.guava', name: 'guava', version: '19.0'
 
     // Lombok, Improving logging
-    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.4'
-
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
     // JETTY WEBSOCKET CLIENT
     compile group: 'org.eclipse.jetty.websocket', name: 'websocket-client', version: '9.4.7.v20170914'
 }
