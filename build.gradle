@@ -41,6 +41,10 @@ test {
     ignoreFailures = true
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '5.0' //version required
+}
+
 dependencies {
 
     // JSON parsing / handling
@@ -67,6 +71,9 @@ dependencies {
 
     // Lombok, Improving logging
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
+    annotationProcessor("org.projectlombok:lombok:1.18.4")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.4")
+
     // JETTY WEBSOCKET CLIENT
     compile group: 'org.eclipse.jetty.websocket', name: 'websocket-client', version: '9.4.7.v20170914'
 }
